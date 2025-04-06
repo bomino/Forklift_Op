@@ -1,3 +1,6 @@
+import streamlit as st
+
+
 def quiz_page():
     # Apply custom CSS
     st.markdown(load_css(), unsafe_allow_html=True)
