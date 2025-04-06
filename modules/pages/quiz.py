@@ -1,4 +1,12 @@
 import streamlit as st
+import random
+import base64
+import datetime
+from modules.ui import load_css, display_logo  # For CSS and logo display
+from modules.data_manager import load_questions, save_quiz_score  # For quiz data and score saving
+from modules.navigation import navigate_to  # For page navigation
+from modules.certificate import create_certificate  # For certificate generation
+
 
 
 def quiz_page():
