@@ -25,7 +25,7 @@ def scores_page():
         
         if st.button("Take a Quiz", key="take_quiz_from_scores"):
             navigate_to("quiz")
-            st.experimental_rerun()
+            st.rerun()
         st.markdown('</div>', unsafe_allow_html=True)
     else:
         # Convert to DataFrame for easy display
@@ -83,4 +83,4 @@ def scores_page():
         # Take quiz again button
         if st.button("Take Quiz Again", key="take_quiz_again_from_scores"):
             navigate_to("quiz")
-            st.experimental_rerun()
+            st.rerun()

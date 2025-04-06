@@ -209,4 +209,4 @@ def show_sidebar():
                 st.session_state.role = None
                 st.session_state.name = None
                 navigate_to("login")
-                st.experimental_rerun()
+                st.rerun()

@@ -102,12 +102,12 @@ def quiz_page():
         with col1:
             if st.button("View My Scores", key="view_scores_btn"):
                 navigate_to("scores")
-                st.experimental_rerun()
+                st.rerun()
         
         with col2:
             if st.button("Take Quiz Again", key="restart_quiz_btn"):
                 restart_quiz()
-                st.experimental_rerun()
+                st.rerun()
                 
         st.markdown('</div>', unsafe_allow_html=True)
 
@@ -151,6 +151,6 @@ def quiz_page():
         if st.session_state.answered:
             if st.button("Next Question", key=f"next_btn_{st.session_state.current_question}"):
                 next_question()
-                st.experimental_rerun()
+                st.rerun()
                 
         st.markdown('</div>', unsafe_allow_html=True)

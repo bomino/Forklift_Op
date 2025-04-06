@@ -32,7 +32,7 @@ def login_page():
                     st.session_state.name = name
                     navigate_to("quiz")
                     st.success("Login successful!")
-                    st.experimental_rerun()
+                    st.rerun()
                 else:
                     st.error("Invalid username or password")
         

@@ -399,7 +399,7 @@ def admin_page():
         st.markdown('<div class="quiz-card">', unsafe_allow_html=True)
         st.markdown("### Remove User")
         if remove_user_section():
-            st.experimental_rerun()
+            st.rerun()
         st.markdown('</div>', unsafe_allow_html=True)
     
     with tab4:
@@ -429,5 +429,5 @@ def admin_page():
             if st.button("Remove Logo", key="remove_logo_btn"):
                 os.remove(LOGO_PATH)
                 st.success("Logo removed successfully.")
-                st.experimental_rerun()
+                st.rerun()
         st.markdown('</div>', unsafe_allow_html=True)
